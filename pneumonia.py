@@ -8,7 +8,7 @@ st.markdown(f'''
 ''',unsafe_allow_html=True)
 @st.cache_resource()
 def finalised_model():
-	model=YOLO('best.pt')
+	model=YOLO('best(1).pt')
 	return model
 
 user_image=st.file_uploader('Upload your file',type=['jpg','png','jpeg'])
